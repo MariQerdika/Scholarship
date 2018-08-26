@@ -254,8 +254,33 @@ color: #fc3535;
 #main .last_news .news_text {
   height: 184px;
 }
-
-
+/*and news block style*/
+footer {
+  background-color: #181818;
+  padding: 23px 0;
+}
+footer a, span {
+  color: #fff
+}
+footer span {
+  padding-right: 10px;
+}
+footer .fb a:hover {
+  text-decoration: none;
+  color: #29487d
+}
+footer .in a:hover {
+  text-decoration: none;
+  color: #ee372f;
+}
+footer .tw a:hover {
+  text-decoration: none;
+  color: #1da1f2;
+}
+footer .mail_block {
+  text-align: right;
+  font-family: 'BPGNinoMtavruli';
+}
 
 
 
