@@ -164,13 +164,96 @@ header {
 .btn-success:hover {
   color: #333;
 }
+/*end banner section*/
 
+#main {
+  padding-top: 60px;
+}
 
+#main .news {
+  padding-bottom: 60px;
+}
 
+#main .news .cub {
+  width: 10px;
+  height: 10px;
+  background-color: #fc3535;
+  display: inline-block;
+  float: left;
+  margin-right:4px;
+}
 
+#main .news a {
+  font-family: 'BPGNinoMtavruli';
+  color: #2d2c2a;
+  font-size: 12px;
+  font-weight: bold;
+}
 
+#main .news a:hover {
+  color: #fc3535;
+  text-decoration: none;
+}
 
+#main .news h6 {
+  line-height: 10px;
+}
 
+#main .all_news a {
+  background-image: url(../images/arrow_red_right.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 34px;
+  line-height: 20px;
+}
+
+#main .news_block {
+  padding: 20px;
+  border: 1px solid #f8f4ef;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#main .news_block h3 a {
+font-family: 'BPGNinoMtavruli';
+display: block;
+font-size: 23px;
+color: #fc3535;
+}
+#main .news_block a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.news_block .news_text {
+  height: 154px;
+  overflow: hidden;
+}
+#main .news_data {
+  font-size: 12px;
+  color: #d0d1d0;
+}
+#main .news_more a {
+  font-size: 12px;
+  font-family: 'BPGNinoMtavruli';
+  color: #d0d1d0;
+}
+#main  .news_more a{
+  background-image: url(../images/gray_arrow.png);
+  display: inline-block;
+  width: 130px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+#main .last_news .bottom_news {
+  text-align: right;
+}
+#main .last_news .bottom_news span a {
+  padding-right: 30px;
+}
+#main .last_news .news_text {
+  height: 184px;
+}
 
 
 
