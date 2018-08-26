@@ -1,0 +1,261 @@
+header {
+	background-color: #181818;
+	height: 70px;
+	line-height: 70px;
+}
+
+.menu_list li {
+	display: inline;
+	padding: 0 22px;
+	font-family: 'BPGNinoMtavruli';
+  font-size: 12px;
+}
+
+.menu_list li a {
+	color:#fff;
+}
+
+.menu_list li a:hover {
+	color: #c52c2c;
+	text-decoration: none;
+}
+
+.toggle {
+	display: none;
+}
+
+.menu_list img {
+  background-color: #ff3333;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+/*search box style*/
+.search-box {
+  position: absolute;
+  top: 27px;
+  right: 77px;
+  background-color: #2f3640;
+  height: 17px;
+  border-radius: 50px;
+  z-index: 1000;
+}
+
+.search-btn {
+  position: absolute;
+  float: right;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #ff3333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt {
+  border:none;
+  position: absolute;
+  right: 0;
+  background-color: #2f3640;
+  height: 30px;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #fff;
+  font-size: 12px;
+  transition: 0.4s;
+  line-height: 40px;
+  display: none;
+  width: 150px;
+  padding: 0 10px;
+  margin-right: -20px;
+  margin-top: -5px;
+}
+/*end search box style*/
+
+
+.lang_href {
+  display: inline-block;
+  float: right;
+  color: #fff;
+  font-size: 12px;
+}
+
+.lang_href:hover {
+  text-decoration: none;
+  color: #ff3333;
+}
+/*end change language style*/
+/*end header style*/
+#main_banner {
+  padding: 0;
+  position: relative;
+}
+
+#main_banner .main_banner {
+  width: 100%;
+  padding: 0;
+}
+
+#main_banner .main_banner_text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 11% auto;
+}
+
+#main_banner .main_banner_text h1 {
+  font-size: 30px;
+}
+
+#main_banner .main_banner_text .text_left {
+  font-family: 'BPGNinoMtavruli';
+  color: #fff;
+}
+
+#main_banner .main_banner_text .text_left a {
+  font-size: 12px;
+  background-image: url(../images/right_arrow.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: right;
+  color: #fff;
+  width: 120px;
+}
+
+#main_banner .main_banner_text .text_left span a:hover {
+  color:red;
+  text-decoration: none;
+  background-image: url(../images/arrow_red_right.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/*#main_banner .main_banner_text .text_right {
+  text-align: right;
+}*/
+#main_banner .main_banner_text .text_right h2 {
+  font-family: 'BPGNinoMtavruli';
+  color: #fff;
+  font-size: 20px;
+}
+
+.right {
+  background: #9496968a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.right .btn-success {
+  width: 100%;
+  font-family: 'BPGNinoMtavruli';
+  background-color: #ff3333;
+  border-color: #ca2f2f;
+}
+
+.btn-success:focus {
+  box-shadow: 0 0 0 0.2rem rgb(212, 68, 68, 0.5);
+}
+
+.btn-success:hover {
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575.98px) {
+  #main_banner .main_banner_text h1 {
+    font-size: 17px;
+  } 
+  #main_banner .main_banner_text {
+    margin: 2% auto;
+  }
+  .right {
+    padding: 10px;
+  }
+  #main_banner .main_banner_text .text_right h2 {
+    font-size: 17px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1199.8px) {
+  .menu_list li {
+    padding: 0 10px;
+  }
+}
+
+
+@media screen and (max-width: 1023.8px) {
+  .toggle {
+  	display: block;
+  	text-align: right;
+  	color:#fff;
+  }
+  .toggle i {
+  	font-size: 30px;
+  	cursor: pointer;
+  }
+  .menu_list {
+  	display: none;
+  	position: fixed;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    background-color: rgb(8, 7, 7, 0.58);
+    color: #fff;
+    z-index: 1000;
+  }
+  .active {
+  	display: block;
+  }
+  .menu_list li {
+  	display: block;
+  	text-align: center;
+  }
+  .menu_list li a{
+    color:#fff;
+    font-size: 20px;
+  }
+  .search-box {
+  display: none;
+}
+.lang_href {
+    line-height: 59px;
+    font-size: 30px;
+  }
+  .search-btn {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    float: right;
+    width: 29px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
