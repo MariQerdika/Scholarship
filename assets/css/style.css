@@ -1,3 +1,11 @@
+.menu_list, h1, h2, h3, .text_left, .btn-success, .news, .news_more, .mail_block {
+  font-family: 'BPGDejaVuSansCaps-Book';
+}
+
+.news_block {
+font-family: 'BPG2017DejaVuSans';
+}
+
 header {
 	background-color: #181818;
 	height: 70px;
@@ -7,7 +15,6 @@ header {
 .menu_list li {
 	display: inline;
 	padding: 0 22px;
-	font-family: 'BPGNinoMtavruli';
   font-size: 12px;
 }
 
@@ -112,33 +119,28 @@ header {
 }
 
 #main_banner .main_banner_text .text_left {
-  font-family: 'BPGNinoMtavruli';
   color: #fff;
 }
 
 #main_banner .main_banner_text .text_left a {
   font-size: 12px;
-  background-image: url(../images/right_arrow.png);
-  background-repeat: no-repeat;
   display: inline-block;
-  background-position: right;
   color: #fff;
   width: 120px;
 }
-
+.text_left i {
+  font-size: 16px;
+  padding-left: 10px;
+}
 #main_banner .main_banner_text .text_left span a:hover {
   color:red;
   text-decoration: none;
-  background-image: url(../images/arrow_red_right.png);
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 /*#main_banner .main_banner_text .text_right {
   text-align: right;
 }*/
 #main_banner .main_banner_text .text_right h2 {
-  font-family: 'BPGNinoMtavruli';
   color: #fff;
   font-size: 20px;
 }
@@ -152,7 +154,6 @@ header {
 
 .right .btn-success {
   width: 100%;
-  font-family: 'BPGNinoMtavruli';
   background-color: #ff3333;
   border-color: #ca2f2f;
 }
@@ -184,7 +185,6 @@ header {
 }
 
 #main .news a {
-  font-family: 'BPGNinoMtavruli';
   color: #2d2c2a;
   font-size: 12px;
   font-weight: bold;
@@ -216,7 +216,6 @@ header {
 }
 
 #main .news_block h3 a {
-font-family: 'BPGNinoMtavruli';
 display: block;
 font-size: 23px;
 color: #fc3535;
@@ -226,7 +225,7 @@ color: #fc3535;
   text-decoration: none;
 }
 .news_block .news_text {
-  height: 154px;
+  height: 150px;
   overflow: hidden;
 }
 #main .news_data {
@@ -235,7 +234,6 @@ color: #fc3535;
 }
 #main .news_more a {
   font-size: 12px;
-  font-family: 'BPGNinoMtavruli';
   color: #d0d1d0;
 }
 #main  .news_more a{
@@ -279,7 +277,6 @@ footer .tw a:hover {
 }
 footer .mail_block {
   text-align: right;
-  font-family: 'BPGNinoMtavruli';
 }
 
 
