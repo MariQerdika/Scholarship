@@ -11,7 +11,6 @@ header {
 	height: 70px;
 	line-height: 70px;
 }
-
 .menu_list li {
 	display: inline;
 	padding: 0 22px;
@@ -145,6 +144,10 @@ header {
   font-size: 20px;
 }
 
+#main_banner .main_banner_text .text_right i {
+  font-size: 16px;
+  padding-left: 10px;
+}
 .right {
   background: #9496968a;
   border-radius: 10px;
@@ -200,14 +203,14 @@ header {
 }
 
 #main .all_news a {
-  background-image: url(../images/arrow_red_right.png);
   display: block;
-  background-repeat: no-repeat;
-  background-position: right;
   padding-right: 34px;
   line-height: 20px;
 }
-
+#main .all_news i {
+  font-size: 16px;
+  padding-left: 10px;
+}
 #main .news_block {
   padding: 20px;
   border: 1px solid #f8f4ef;
@@ -237,17 +240,15 @@ color: #fc3535;
   color: #d0d1d0;
 }
 #main  .news_more a{
-  background-image: url(../images/gray_arrow.png);
   display: inline-block;
-  width: 130px;
-  background-position: right;
-  background-repeat: no-repeat;
+  width: 140px;
+}
+#main  .news_more i {
+  font-size: 16px;
+  padding-left: 10px;
 }
 #main .last_news .bottom_news {
   text-align: right;
-}
-#main .last_news .bottom_news span a {
-  padding-right: 30px;
 }
 #main .last_news .news_text {
   height: 184px;
