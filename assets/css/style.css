@@ -1,4 +1,4 @@
-.menu_list, h1, h2, h3, .text_left, .btn-success, .news, .news_more, .mail_block {
+.menu_list, h2, h3, .btn-success, .news, .news_more, .mail_block {
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
@@ -7,27 +7,28 @@ font-family: 'BPG2017DejaVuSans';
 }
 
 header {
-	background-color: #181818;
-	height: 70px;
-	line-height: 70px;
+  background-color: #181818;
+  height: 70px;
+  line-height: 70px;
 }
 .menu_list li {
-	display: inline;
-	padding: 0 17px;
+  display: inline;
+  padding: 0 17px;
   font-size: 12px;
 }
 
 .menu_list li a {
-	color:#fff;
+  color:#fff;
 }
 
 .menu_list li a:hover {
-	color: #c52c2c;
-	text-decoration: none;
+  color: #c52c2c;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
 }
 
 .toggle {
-	display: none;
+  display: none;
 }
 
 .menu_list img {
@@ -112,33 +113,6 @@ header {
   left: 0;
   margin: 11% auto;
 }
-
-#main_banner .main_banner_text h1 {
-  font-size: 30px;
-}
-
-#main_banner .main_banner_text .text_left {
-  color: #fff;
-}
-
-#main_banner .main_banner_text .text_left a {
-  font-size: 12px;
-  display: inline-block;
-  color: #fff;
-  width: 120px;
-}
-.text_left i {
-  font-size: 16px;
-  padding-left: 10px;
-}
-#main_banner .main_banner_text .text_left span a:hover {
-  color:red;
-  text-decoration: none;
-}
-
-/*#main_banner .main_banner_text .text_right {
-  text-align: right;
-}*/
 #main_banner .main_banner_text .text_right h2 {
   color: #fff;
   font-size: 20px;
@@ -172,10 +146,11 @@ header {
 
 #main {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 #main .news {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 #main .news .cub {
@@ -211,16 +186,24 @@ header {
   font-size: 16px;
   padding-left: 10px;
 }
-#main .news_block {
-  padding: 20px;
+/*#main .news_block {
   border: 1px solid #f8f4ef;
   border-radius: 10px;
   margin-bottom: 20px;
+}*/
+#main .news_block {
+  padding-left: 0;
+  margin-bottom: 20px;
 }
-
+#main .new_block {
+  padding-right: 0;
+}
+#main .img_article {
+  margin-bottom: 20px;
+}
 #main .news_block h3 a {
 display: block;
-font-size: 23px;
+font-size: 22px;
 color: #fc3535;
 }
 #main .news_block a:hover {
@@ -228,7 +211,7 @@ color: #fc3535;
   text-decoration: none;
 }
 .news_block .news_text {
-  height: 150px;
+  height: 165px;
   overflow: hidden;
 }
 #main .news_data {
@@ -252,6 +235,22 @@ color: #fc3535;
 }
 #main .last_news .news_text {
   height: 184px;
+}
+/*#main .img_article img {
+  padding-right: 20px;
+  float: left;
+}*/
+#main .img_article {
+  border: 1px solid #f8f4ef;
+  border-radius: 10px;
+  padding: 15px;
+
+}
+.no_padding {
+  padding:0;
+}
+.non_left_padding {
+  padding-left: 0;
 }
 /*and news block style*/
 footer {
@@ -300,45 +299,48 @@ footer .mail_block {
   }
 }
 
-
-
-
-
-@media screen and (max-width: 1199.8px) {
-  .menu_list li {
-    padding: 0 10px;
+@media screen and (max-width: 767.98px) {
+  #main .last_news .news_text {
+    height: 141px;
   }
+  #main  .last_news h3 a {
+    padding-top: 20px;
+}
+
 }
 
 
-@media screen and (max-width: 1023.8px) {
+
+
+@media screen and (max-width: 991.98px) {
   .toggle {
-  	display: block;
-  	text-align: right;
-  	color:#fff;
+    display: block;
+    text-align: right;
+    color:#fff;
   }
   .toggle i {
-  	font-size: 30px;
-  	cursor: pointer;
+    font-size: 30px;
+    cursor: pointer;
   }
   .menu_list {
-  	display: none;
-  	position: fixed;
+    display: none;
+    position: fixed;
     top: 70px;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 0;
-    background-color: rgb(8, 7, 7, 0.58);
+    background-color: rgb(8, 7, 7, 0.85);
     color: #fff;
     z-index: 1000;
+    height: 100vh;
   }
   .active {
-  	display: block;
+    display: block;
   }
   .menu_list li {
-  	display: block;
-  	text-align: center;
+    display: block;
+    text-align: center;
   }
   .menu_list li a{
     color:#fff;
@@ -363,5 +365,15 @@ footer .mail_block {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.news_block .news_text {
+    height: 74px;
+}
+@media screen and (max-width: 1199.8px) {
+  .menu_list li {
+    padding: 0 10px;
+  }
+  .news_block .news_text {
+    height: 123px;
 }
 }
