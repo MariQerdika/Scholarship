@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.png">
-  <title></title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet"  href="assets/css/style.css">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet"  href="assets/css/style.css">
   <link rel="stylesheet"  href="assets/css/fonts.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 <header class="container-fluid">
@@ -19,11 +19,11 @@
           <nav>
             <div class="toggle"><i class="fa fa-bars"></i></div>
             <ul class="menu_list">
-              <li><a href="#">მთავრი</a></li>
-              <li><a href="#">ჩვენ შესახებ</a></li>
-              <li><a href="#">სტიპენდიები</a></li>
+              <li class="active"><a href="index.html">მთავრი</a></li>
+              <li><a href="about.html">ჩვენ შესახებ</a></li>
+              <li><a href="#">სტიპენდიანტები</a></li>
               <li><a href="#">კონტრიბუტორები</a></li>
-              <li><a href="#">სიახლეები</a></li>
+              <li><a href="news.html">სიახლეები</a></li>
               <li><a href="#">დონაცია</a></li>
               <li><a href="#">გალერეა</a></li>
             </ul>
@@ -43,9 +43,7 @@
 <section id="main_banner" class="container-fluid">
   <img class="main_banner" src="assets/images/main_banner.png" >
   <div class="container main_banner_text">
-    <div class="row justify-content-between">
-      <div class="col-12 col-md-6 col-lg-5">
-      </div>
+    <div class="row">
       <div class="col-12 col-md-6 col-lg-3 text_right">
         <div class="right">
           <h2>გახდი კონტრიბუტორი</h2>
@@ -59,53 +57,54 @@
   <div class="row justify-content-between news">
     <div class="col-4">
       <div class="cub"></div>
-      <h6><a href="#">სიახლეები</a></h6>
+      <h6>სიახლეები</h6>
     </div>
     <div class="cocl-4  all_news">
-      <h6><a href="#">ყველა სიახლე<i class="fas fa-long-arrow-alt-right"></i></a></h6>
+      <h6><a href="news.html">ყველა სიახლე<i class="fas fa-long-arrow-alt-right"></i></a></h6>
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-md-12 col-lg-6 news_block">
-      <div class="row">
-        <div class="col-5 col-lg-6">
-          <img  class="rounded img-fluid" src="assets/images/img_one.png">
-        </div>
-        <div class="col-7 col-lg-6 non_left_padding">
-          <h3><a href="#">შეავსე აპლიკაცია დღეს</a></h3>
-        <p class="news_text">როგორც მთავრობის ადმინისტრაციასთან, სტუდენტებთან ერთად გამართულ პრესკონფერენციაზ ე უნივერსიტეტის რექტორმა ილიას ჩილოღლუმ განაცხადა, ის ფაქტი, რომ უნივერსიტეტმა ფინანსთა სამინისტროს საგამოძიებო სამსახურის მიერ დაკისრებული დავალიანება გადაიხადა, იმას არ ნიშნავს, რომ უნივერსიტეტი ავტორიზაციის საბჭოს მიერ მიღებულ გადაწყვეტილებას აღიარებსმიერ მიღებულ გადაწყვეტილებას აღიარებსმიერ მიღებულ გადაწყვეტილებას აღიარებს. </p>
-        <div class="row align-items-end">
-          <div class="col-4"> <span class="news_data"> 20.02.1991</span></div>
-          <div class="col-7 no_padding"> <span class="news_more"><a href="#">იხილეთ ვრცლად<i class="fas fa-long-arrow-alt-right"></i></a></span>
-        </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    
-
- <div class="col-12 col-md-12 col-lg-6 news_block">
-      <div class="row">
-        <div class="col-5 col-lg-6">
-          <img  class="rounded img-fluid" src="assets/images/img_one.png">
-        </div>
-        <div class="col-7 col-lg-6 non_left_padding">
-          <h3><a href="#">შეავსე აპლიკაცია დღეს</a></h3>
-        <p class="news_text">როგორც მთავრობის ადმინისტრაციასთან, სტუდენტებთან ერთად გამართულ პრესკონფერენციაზ ე უნივერსიტეტის რექტორმა ილიას ჩილოღლუმ განაცხადა, ის ფაქტი, რომ უნივერსიტეტმა ფინანსთა სამინისტროს საგამოძიებო სამსახურის მიერ დაკისრებული დავალიანება გადაიხადა, იმას არ ნიშნავს, რომ უნივერსიტეტი ავტორიზაციის საბჭოს მიერ მიღებულ გადაწყვეტილებას აღიარებს. </p>
-        <div class="row align-items-end">
-          <div class="col-4"> <span class="news_data"> 20.02.1991</span></div>
-          <div class="col-7 no_padding"> <span class="news_more"><a href="#">იხილეთ ვრცლად<i class="fas fa-long-arrow-alt-right"></i></a></span>
-        </div>
+      <div class="col-12 col-lg-6">
+        <div class="news_block">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-6">
+            <img  class="rounded img-fluid" src="assets/images/img_one.png">
+          </div>
+          <div class="col-12 col-md-8 col-lg-6">
+            <h3><a href="#">შეავსე აპლიკაცია დღეს</a></h3>
+            <p class="news_text">როგორც მთავრობის ადმინისტრაციასთან, სტუდენტებთან ერთად გამართულ პრესკონფერენციაზ ე უნივერსიტეტის რექტორმა ილიას ჩილოღლუმ განაცხადა, ის ფაქტი, რომ უნივერსიტეტმა ფინანსთა სამინისტროს საგამოძიებო სამსახურის მიერ დაკისრებული დავალიანება გადაიხადა, იმას არ ნიშნავს, რომ უნივერსიტეტი ავტორიზაციის საბჭოს მიერ მიღებულ გადაწყვეტილებას აღიარებსმიერ მიღებულ გადაწყვეტილებას აღიარებსმიერ მიღებულ გადაწყვეტილებას აღიარებს. </p>
+            <div class="row align-items-end">
+              <div class="col-4"> <span class="news_data"> 20.02.1991</span></div>
+              <div class="col-7 no_padding"> <span class="news_more"><a href="#">იხილეთ ვრცლად<i class="fas fa-long-arrow-alt-right"></i></a></span></div>
+            </div>
+          </div>
         </div>
         </div>
       </div>
-    </div>
-    <div class="col-12  news_block last_news ">
+      <div class="col-12 col-lg-6">
+        <div class="news_block">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-6">
+            <img  class="rounded img-fluid" src="assets/images/img_three.png">
+          </div>
+          <div class="col-12 col-md-8 col-lg-6">
+            <h3><a href="#">შეავსე აპლიკაცია დღეს</a></h3>
+            <p class="news_text">როგორც მთავრობის ადმინისტრაციასთან, სტუდენტებთან ერთად გამართულ პრესკონფერენციაზ ე უნივერსიტეტის რექტორმა ილიას ჩილოღლუმ განაცხადა, ის ფაქტი, რომ უნივერსიტეტმა ფინანსთა სამინისტროს საგამოძიებო სამსახურის მიერ დაკისრებული დავალიანება გადაიხადა, იმას არ ნიშნავს, რომ უნივერსიტეტი ავტორიზაციის საბჭოს მიერ მიღებულ გადაწყვეტილებას აღიარებსმიერ მიღებულ გადაწყვეტილებას აღიარებსმიერ მიღებულ გადაწყვეტილებას აღიარებს. </p>
+            <div class="row align-items-end">
+              <div class="col-4"> <span class="news_data"> 20.02.1991</span></div>
+              <div class="col-7 no_padding"> <span class="news_more"><a href="#">იხილეთ ვრცლად<i class="fas fa-long-arrow-alt-right"></i></a></span></div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div> 
+   <div class="col-12  news_block last_news ">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <img  class="rounded img-fluid" src="assets/images/img_two.png">
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <h3><a href="#">შეავსე აპლიკაცია დღეს</a></h3>
           <p class="news_text">როგორც მთავრობის ადმინისტრაციასთან, სტუდენტებთან ერთად გამართულ პრესკონფერენციაზ ე უნივერსიტეტის რექტორმა ილიას ჩილოღლუმ განაცხადა, ის ფაქტი, რომ უნივერსიტეტმა ფინანსთა სამინისტროს საგამოძიებო სამსახურის მიერ დაკისრებული დავალიანება გადაიხადა, იმას არ ნიშნავს, რომ უნივერსიტეტი ავტორიზაციის საბჭოს მიერ მიღებულ გადაწყვეტილებას აღიარებს. </p>
           <div class="row last_news justify-content-between">
@@ -114,17 +113,16 @@
           </div>
         </div>
     </div>
-  </div> 
 </section>
 <footer>
   <div class="container footer">
     <div class="row">
-    <div class="col-4">
+    <div class="col-12 col-sm-5 col-lg-4 soc_icon">
       <span class="fb"><a href="#">Facebook</a></span>
       <span class="in"><a href="#">Instagram</a></span>
       <span class="tw"><a href="#">Twitter</a></span>
     </div>
-    <div class="col-8  mail_block">
+    <div class="col-12 col-sm-7 col-lg-8  mail_block">
       <span>ტელ: (+995) 595 832 127</span>
       <span>ელ.ფოსტა: info@scholarshipfund.ge</span>
     </div>

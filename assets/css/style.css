@@ -1,34 +1,56 @@
-.menu_list, h2, h3, .btn-success, .news, .news_more, .mail_block {
+.menu_list, h1, h2, h3,h6, .text_left, .btn-success, .news, .news_more, .mail_block {
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
-.news_block {
+.news_block, .about_center_content .about_bottom_content {
 font-family: 'BPG2017DejaVuSans';
 }
 
+h1 {
+  padding: 160px 0 90px;
+  color: #fff;
+  font-size: 30px;
+}
+ h6 {
+  line-height: 10px;
+  color: #2d2c2a;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 header {
-  background-color: #181818;
-  height: 70px;
-  line-height: 70px;
+	background-color: #181818;
+	height: 70px;
+	line-height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
 }
 .menu_list li {
-  display: inline;
-  padding: 0 17px;
+	display: inline;
+	padding: 0 15px;
   font-size: 12px;
 }
 
 .menu_list li a {
-  color:#fff;
+	color:#fff;
 }
-
-.menu_list li a:hover {
+.menu_list  .active a {
   color: #c52c2c;
   text-decoration: none;
   transition: all 0.5s ease-in;
 }
+.menu_list li a:hover {
+	color: #c52c2c;
+	text-decoration: none;
+  transition: all 0.5s ease-in;
+}
 
 .toggle {
-  display: none;
+	display: none;
 }
 
 .menu_list img {
@@ -113,6 +135,34 @@ header {
   left: 0;
   margin: 11% auto;
 }
+
+#main_banner .main_banner_text h1 {
+  font-size: 30px;
+}
+
+#main_banner .main_banner_text .text_left {
+  color: #fff;
+}
+
+#main_banner .main_banner_text .text_left a {
+  font-size: 12px;
+  display: inline-block;
+  color: #fff;
+  width: 120px;
+}
+.text_left i {
+  font-size: 16px;
+  padding-left: 10px;
+}
+#main_banner .main_banner_text .text_left span a:hover {
+  color:red;
+  text-decoration: none;
+}
+
+#main_banner .main_banner_text .text_right {
+  position: absolute;
+  right: 0;
+}
 #main_banner .main_banner_text .text_right h2 {
   color: #fff;
   font-size: 20px;
@@ -152,8 +202,7 @@ header {
 #main .news {
   padding-bottom: 40px;
 }
-
-#main .news .cub {
+.cub {
   width: 10px;
   height: 10px;
   background-color: #fc3535;
@@ -161,22 +210,6 @@ header {
   float: left;
   margin-right:4px;
 }
-
-#main .news a {
-  color: #2d2c2a;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-#main .news a:hover {
-  color: #fc3535;
-  text-decoration: none;
-}
-
-#main .news h6 {
-  line-height: 10px;
-}
-
 #main .all_news a {
   display: block;
   padding-right: 34px;
@@ -186,27 +219,27 @@ header {
   font-size: 16px;
   padding-left: 10px;
 }
-/*#main .news_block {
+.all_news h6 a{
+  line-height: 10px;
+  color: #2d2c2a;
+  font-size: 12px;
+  font-weight: bold;
+}
+.news_block {
   border: 1px solid #f8f4ef;
   border-radius: 10px;
+  padding: 10px;
   margin-bottom: 20px;
-}*/
-#main .news_block {
-  padding-left: 0;
-  margin-bottom: 20px;
-}
-#main .new_block {
-  padding-right: 0;
 }
 #main .img_article {
   margin-bottom: 20px;
 }
-#main .news_block h3 a {
+h3 a {
 display: block;
 font-size: 22px;
 color: #fc3535;
 }
-#main .news_block a:hover {
+.news_block a:hover {
   color: #333;
   text-decoration: none;
 }
@@ -214,19 +247,19 @@ color: #fc3535;
   height: 165px;
   overflow: hidden;
 }
-#main .news_data {
+.news_data {
   font-size: 12px;
   color: #d0d1d0;
 }
-#main .news_more a {
+.news_more a {
   font-size: 12px;
   color: #d0d1d0;
 }
-#main  .news_more a{
+.news_more a{
   display: inline-block;
   width: 140px;
 }
-#main  .news_more i {
+.news_more i {
   font-size: 16px;
   padding-left: 10px;
 }
@@ -253,6 +286,78 @@ color: #fc3535;
   padding-left: 0;
 }
 /*and news block style*/
+/*start about page style*/
+.inner_page_header {
+background-color: red;
+padding: 0;
+}
+#about_page {
+  padding:0;
+}
+#about_page .about_center_content {
+  background-color: #fff;
+  padding-top: 80px;
+}
+#about_page .about_center_content .about_image img {
+  width: 100%;
+}
+#about_page .about_center_content p{
+  font-size: 14px;
+}
+#about_page .about_center_content h6 {
+  padding-bottom: 30px;
+}
+#about_page .about_bottom_content {
+  background-color: #fafafa;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+#about_page .about_bottom_content  p {
+  font-size: 14px;
+}
+#about_page .about_bottom_content h6  {
+  padding-bottom: 30px;
+}
+/*end about page style*/
+/*start news page style*/
+#news {
+  padding:0;
+}
+.pagination {
+  border: 1px solid #edeef2;
+  margin: 60px 0;
+}
+.navigation {
+  margin: 0 auto;
+}
+.page-item:first-child .page-link {
+    border-right: 2px solid #edeef2; !important;
+}
+.page-item:last-child .page-link {
+    border-left: 2px solid #edeef2; !important;
+}
+.pagination li:first-child a{
+  padding: 8px 20px;
+}
+.pagination li:last-child a{
+  padding: 8px 20px;
+}
+.pagination a {
+  font-weight: bold;
+  color: #181818;
+}
+.pagination a:hover {
+  background-color: #ff3333;
+  color: #fff;
+}
+.pagination i {
+  font-size: 19px;
+}
+.page-link {
+  border: none; !important;
+}
+
+/*end news page style*/
 footer {
   background-color: #181818;
   padding: 23px 0;
@@ -284,6 +389,7 @@ footer .mail_block {
 
 
 
+
 @media screen and (max-width: 575.98px) {
   #main_banner .main_banner_text h1 {
     font-size: 17px;
@@ -297,50 +403,54 @@ footer .mail_block {
   #main_banner .main_banner_text .text_right h2 {
     font-size: 17px;
   }
+  footer .mail_block {
+  text-align: center;
+}
+footer .soc_icon {
+  text-align: center;
+}
+
 }
 
 @media screen and (max-width: 767.98px) {
   #main .last_news .news_text {
     height: 141px;
   }
-  #main  .last_news h3 a {
+  h3 a {
     padding-top: 20px;
 }
-
 }
-
 
 
 
 @media screen and (max-width: 991.98px) {
   .toggle {
-    display: block;
-    text-align: right;
-    color:#fff;
+  	display: block;
+  	text-align: right;
+  	color:#fff;
   }
   .toggle i {
-    font-size: 30px;
-    cursor: pointer;
+  	font-size: 30px;
+  	cursor: pointer;
   }
   .menu_list {
-    display: none;
-    position: fixed;
+  	display: none;
+  	position: fixed;
     top: 70px;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 0;
-    background-color: rgb(8, 7, 7, 0.85);
+    background-color: rgb(8, 7, 7, 0.58);
     color: #fff;
     z-index: 1000;
-    height: 100vh;
   }
   .active {
-    display: block;
+  	display: block;
   }
   .menu_list li {
-    display: block;
-    text-align: center;
+  	display: block;
+  	text-align: center;
   }
   .menu_list li a{
     color:#fff;
@@ -369,11 +479,22 @@ footer .mail_block {
 .news_block .news_text {
     height: 74px;
 }
+.mail_block span {
+  display: block;
+}
+}
 @media screen and (max-width: 1199.8px) {
   .menu_list li {
-    padding: 0 10px;
+    padding: 0 5px;
   }
   .news_block .news_text {
     height: 123px;
 }
+   h1 {
+    padding: 110px 0 40px;
+    font-size: 20px;
+  }
+   .inner_center_content {
+    padding-top: 40px;
+  }
 }
