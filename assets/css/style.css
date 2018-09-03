@@ -1,4 +1,4 @@
-.menu_list, h1, h2, h3,h6, .text_left, .btn-success, .news, .news_more, .mail_block {
+.menu_list, h1, h2, h3,h6, .text_left, .btn-success, .news, .news_more, .mail_block, .contr_img, .contributors_more  {
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
@@ -358,6 +358,54 @@ padding: 0;
 }
 
 /*end news page style*/
+/*start contributors page*/
+.contributors {
+  padding: 60px 0;
+}
+.contributors h2 {
+  font-size: 18px;
+}
+.contr_text {
+  color: #fff;
+  font-size: 12px;
+}
+.donators {
+  width: 100%;
+}
+.contr_img {
+  padding: 25px 0;
+}
+.contr_img img {
+  margin-bottom: 10px;
+  
+}
+.contr_img img:hover {
+  background-size: 110%;
+  transition: all 0.3s ease-in-out;
+}
+.contr_img a {
+  color: #333;
+}
+.contributors_more a {
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 40px;
+  background-color: #ff3333;
+  /*display: inline-block;*/
+
+  border-radius: 10px;
+  text-decoration: none;
+}
+.contributors_more a:hover {
+  background-color: #9c1d1d;
+}
+.company {
+  background-color: #ecf0f1;
+}
+.contr_text {
+  padding-top: 150px;
+}
+/*end contributors page*/
 footer {
   background-color: #181818;
   padding: 23px 0;
@@ -409,7 +457,15 @@ footer .mail_block {
 footer .soc_icon {
   text-align: center;
 }
-
+.contr_text {
+  padding-top: 0px;
+  }
+  #main_banner {
+    padding-top: 70px;
+  }
+  .main_banner_text {
+    padding-top: 90px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -419,6 +475,7 @@ footer .soc_icon {
   h3 a {
     padding-top: 20px;
 }
+
 }
 
 
@@ -482,6 +539,10 @@ footer .soc_icon {
 .mail_block span {
   display: block;
 }
+.contr_text {
+  padding-top: 80px;
+  }
+
 }
 @media screen and (max-width: 1199.8px) {
   .menu_list li {
@@ -497,4 +558,8 @@ footer .soc_icon {
    .inner_center_content {
     padding-top: 40px;
   }
+ .contr_text {
+  padding-top: 90px;
+  }
+
 }
