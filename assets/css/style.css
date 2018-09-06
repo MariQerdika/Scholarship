@@ -2,7 +2,7 @@
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
-.news_block, .about_center_content .about_bottom_content, .contributors_text, .contr_text, .popup_content {
+.news_block, .about_center_content .about_bottom_content, .contributors_text, .contr_text, .popup_content, .inner_news_text {
 font-family: 'BPG2017DejaVuSans';
 }
 
@@ -116,7 +116,7 @@ header {
   color: #ff3333;
 }
 /*end change language style*/
-/*end header style*/
+/*-------------------------------end header style-------------------------*/
 #main_banner {
   padding: 0;
   position: relative;
@@ -269,10 +269,6 @@ color: #fc3535;
 #main .last_news .news_text {
   height: 184px;
 }
-/*#main .img_article img {
-  padding-right: 20px;
-  float: left;
-}*/
 #main .img_article {
   border: 1px solid #f8f4ef;
   border-radius: 10px;
@@ -285,7 +281,34 @@ color: #fc3535;
 .non_left_padding {
   padding-left: 0;
 }
-/*and news block style*/
+/*------------------------------------and news block style-------------------*/
+.news_inner {
+  margin-top: 30px;
+}
+.inner_news_image { 
+  border-radius: 15px;
+  width: 100%;
+}
+.news_date {
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+  background-color:red;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.news_content {
+  position: relative;
+}
+.news_inner h3 {
+  font-size: 18px;
+  padding: 30px 0;
+  color: #ff4d4d;
+}
+.inner_news_text {
+  font-size: 12px;
+}
+/*-------------------------------and news_inner page style-------------------*/
 /*start about page style*/
 .inner_page_header {
 background-color: red;
@@ -459,7 +482,7 @@ padding: 0;
   padding: 70px;
   background: #fff;
   border-radius: 5px;
-  width: 70%;
+  width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
   z-index: 1000;
