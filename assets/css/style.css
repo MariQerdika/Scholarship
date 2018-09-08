@@ -1,4 +1,4 @@
-.menu_list, h1, h2, h3,h6, .text_left, .btn-success, .news, .news_more, .mail_block, .contr_img, .contributors_more, .company_img  {
+.menu_list, h1, h2, h3,h6, .text_left, .btn-success, .news, .news_more, .mail_block, .contr_img, .contributors_more, .company_img, .btn-danger   {
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
@@ -307,7 +307,53 @@ color: #fc3535;
 }
 .inner_news_text {
   font-size: 12px;
+  margin-bottom: 40px;
 }
+.news_inner .btn-danger {
+  width: 100%;
+  padding: 22px 0;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+.news_inner .btn-danger:hover {
+  color: #333;
+}
+/*------------------start slider style------------*/
+#bottom_slider {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.sliderslick img {
+  width: 95% !important;
+  border-radius: 15px !important;
+}
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 0 !important;
+  color: red !important;
+
+}
+.slick-prev {
+  left: 0 !important;
+  background-color: red !important;
+  position: absolute !important;
+  left: 90% !important;
+}
+.slick-next {
+    right: 0 !important;
+    background-color: red !important;
+    position: absolute !important;
+    right: 2% !important;
+    color: red !important;
+  }
+.slick-next:hover {
+  background-color: green !important;
+}
+.slick-prev:hover {
+  background-color: green !important;
+}
+/*-----------------end slider style--------------*/
 /*-------------------------------and news_inner page style-------------------*/
 /*start about page style*/
 .inner_page_header {
@@ -482,7 +528,7 @@ padding: 0;
   padding: 70px;
   background: #fff;
   border-radius: 5px;
-  width: 50%;
+  width: 58%;
   position: relative;
   transition: all 5s ease-in-out;
   z-index: 1000;
@@ -676,3 +722,18 @@ footer .soc_icon {
     width: 80%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
