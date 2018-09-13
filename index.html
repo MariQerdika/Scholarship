@@ -134,6 +134,23 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript">
 // burger click start
+//  $(document).ready(function(){
+//         $('.toggle').click(function(){
+//             $('.menu_list').toggleClass('active');
+//         });
+//     });
+// // burger click end
+// // search jquery start
+//   $(document).ready(function(){
+//     $(".search-btn").click(function(){
+//         $('.search-txt').toggleClass('lang_href');
+//     });
+// });
+//    $(".main_banner").on("click", function(){
+//         $('.search-txt.lang_href').removeClass('lang_href');
+//     });
+// search style end
+	// burger click start
  $(document).ready(function(){
         $('.toggle').click(function(){
             $('.menu_list').toggleClass('active');
@@ -143,13 +160,25 @@
 // search jquery start
   $(document).ready(function(){
     $(".search-btn").click(function(){
-        $('.search-txt').toggleClass('lang_href');
-    });
+    var bool = $('.search-txt').hasClass('lang_href');
+      if(bool) {
+        $('.search-txt').removeClass('lang_href')
+        } else{ 
+          $('.search-txt').addClass('lang_href')
+        }
+    });  
+
+
+
+    $("body").click(function(e){
+      var bool1 = $(e.target).hasClass('search-img')
+      var bool = $('.search-txt').hasClass('lang_href');
+      if(bool && !bool1) {
+        $('.search-txt').removeClass('lang_href')
+        }
+})
+
 });
-   $(".main_banner").on("click", function(){
-        $('.search-txt.lang_href').removeClass('lang_href');
-    });
-// search style end
 </script>
 </body>
 </html>
