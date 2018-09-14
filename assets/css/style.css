@@ -782,6 +782,9 @@ footer .soc_icon {
   .popup{
     width: 80%;
   }
+  .gallery_links a {
+    font-size: 13px;
+  }
 }
 
 
