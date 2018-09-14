@@ -157,28 +157,33 @@
         });
     });
 // burger click end
-// search jquery start
-  $(document).ready(function(){
+$(document).ready(function(){
     $(".search-btn").click(function(){
-    var bool = $('.search-txt').hasClass('lang_href');
-      if(bool) {
-        $('.search-txt').removeClass('lang_href')
-        } else{ 
-          $('.search-txt').addClass('lang_href')
-        }
-    });  
-
-
-
-    $("body").click(function(e){
-      var bool1 = $(e.target).hasClass('search-img')
-      var bool = $('.search-txt').hasClass('lang_href');
-      if(bool && !bool1) {
-        $('.search-txt').removeClass('lang_href')
-        }
-})
-
+        $('.search-txt').toggleClass('lang_href');
+    });
 });
+// // search jquery start
+//   $(document).ready(function(){
+//     $(".search-btn").click(function(){
+//     var bool = $('.search-txt').hasClass('lang_href');
+//       if(bool) {
+//         $('.search-txt').removeClass('lang_href')
+//         } else{ 
+//           $('.search-txt').addClass('lang_href')
+//         }
+//     });  
+
+
+
+//     $("body").click(function(e){
+//       var bool1 = $(e.target).hasClass('search-img')
+//       var bool = $('.search-txt').hasClass('lang_href');
+//       if(bool && !bool1) {
+//         $('.search-txt').removeClass('lang_href')
+//         }
+// })
+
+// });
 </script>
 </body>
 </html>
