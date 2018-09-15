@@ -8,7 +8,7 @@ font-family: 'BPG2017DejaVuSans';
 }
 
 h1 {
-  padding: 160px 0 90px;
+  padding: 120px 0 70px;
   color: #fff;
   font-size: 30px;
 }
@@ -468,7 +468,7 @@ iframe {
   background-color: #ecf0f1;
 }
 .contr_text {
-  padding-top: 150px;
+  padding-top: 110px;
 }
 .company_img {
   padding: 25px 0;
@@ -757,6 +757,7 @@ footer .soc_icon {
 .contr_text {
   padding-top: 80px;
   }
+ 
 
 }
 @media screen and (max-width: 1199.8px) {
@@ -784,6 +785,21 @@ footer .soc_icon {
   }
   .gallery_links a {
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .gallery_title {
+    width: 91%;
+  }
+}
+@media screen and (min-width: 992px) {
+ .gallery_title {
+    width: 94%;
+  }
+}
+@media screen and (min-width: 1200px) {
+ .gallery_title {
+    width: 90%;
   }
 }
 
