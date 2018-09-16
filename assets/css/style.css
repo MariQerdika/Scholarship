@@ -617,7 +617,21 @@ iframe {
     background-position: left center;
 }
 /*end gallery style*/
-/*end contributors page*/
+/*start inner gallery*/
+.galley_inner {
+  margin-top: 100px;
+}
+.galley_inner img {
+  width: 100%;
+  transition: 1s;
+}
+.galley_inner img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+.gallery_row {
+  margin-bottom: 20px;
+}
 footer {
   background-color: #181818;
   padding: 23px 0;
