@@ -1,9 +1,9 @@
-.menu_list, h1, h2, h3,h6, .text_left, .btn-success, .news, .news_more, .mail_block, .contr_img, .contributors_more, .company_img, .btn-danger,
-.gallery_links, .gallery_title {
+.menu_list, h1,h2,h3,h5,h6, .text_left, .btn-success, .news, .news_more, .mail_block, .contr_img, .contributors_more, .company_img, .btn-danger,
+.gallery_links, .gallery_title, .form-control, .label-text {
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
-.news_block, .about_center_content .about_bottom_content, .contributors_text, .contr_text, .popup_content, .inner_news_text {
+.news_block, .about_center_content .about_bottom_content, .contributors_text, .contr_text, .popup_content, .inner_news_text, .packet_text {
 font-family: 'BPG2017DejaVuSans';
 }
 
@@ -632,6 +632,111 @@ iframe {
 .gallery_row {
   margin-bottom: 20px;
 }
+/*and inner gallery*/
+/*start donation page style*/
+.donation {
+  background-color: #ecf0f1;
+  padding: 80px 0;
+}
+.donation button {
+  font-size: 12px;
+}
+.form-check {
+  padding-left: 0;
+}
+.label-text {
+  color: #333;
+}
+.text_right {
+  text-align: right;
+}
+.form-control {
+ font-size: 12px;
+}
+.donation_packet h2 {
+  color: #ff0000;
+  font-size: 18px;
+}
+.contributors_text {
+  font-size: 12px;
+}
+.donation_packet {
+  padding: 60px 100px;
+}
+
+/* hide original radio button */
+.billing-form input[type="radio"] {
+    display:none;
+}
+
+/* make gray circle that simulate buttons with span */
+.billing-form input[type="radio"] + label>span:first-child {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    border-radius:  50%;
+    background-color:#DFDFDF;
+}
+
+/* make red circle inside checked button with second span */
+.billing-form input[type="radio"]:checked + label>span:first-child span{
+    display:block;
+    margin:auto;
+    margin-top: 5px;
+    vertical-align:middle;
+    border-radius:  50%;
+    background-color:#E63150;
+    width:9px;
+    height:9px;
+}
+.packet_content {
+  border: 1px solid #edeef2;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+.number_packet {
+  padding: 10px 16px;
+  border-radius: 50%;
+  color: #ff0000;
+  font-weight: bold;
+  border:2px solid #ff0000;
+  background-color: #fff;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+.price {
+  color: #ff0000;
+}
+h5 {
+  margin-top: 40px;
+}
+.packet_text {
+  padding: 20px 25px 40px;
+  font-size: 12px;
+}
+.packet {
+  margin-bottom: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
   background-color: #181818;
   padding: 23px 0;
@@ -771,7 +876,9 @@ footer .soc_icon {
 .contr_text {
   padding-top: 80px;
   }
- 
+ .donation_input {
+    margin-top: 10px;
+  }
 
 }
 @media screen and (max-width: 1199.8px) {
@@ -799,6 +906,12 @@ footer .soc_icon {
   }
   .gallery_links a {
     font-size: 13px;
+  }
+  .donation button {
+    margin-top:20px;
+  }
+  .packet_content {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 576px) {
