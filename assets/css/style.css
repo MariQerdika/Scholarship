@@ -697,6 +697,7 @@ iframe {
   border-radius: 5px;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 .number_packet {
   padding: 10px 16px;
@@ -712,8 +713,15 @@ iframe {
 .price {
   color: #ff0000;
 }
-h5 {
+.packet h5 {
   margin-top: 40px;
+}
+.packet h5 a {
+  color: #181818;
+}
+.packet h5 a:hover {
+  color: #ff0000;
+  text-decoration: none;
 }
 .packet_text {
   padding: 20px 25px 40px;
@@ -722,10 +730,17 @@ h5 {
 .packet {
   margin-bottom: 160px;
 }
-
-
-
-
+.price{
+  background-image: url(../images/donators_back.);
+}
+.packet_content img {
+  transform: rotate(42deg);
+    position: absolute;
+    left: -65px;
+    top: -70px;
+    z-index: -1;
+}
+/*end donation page style*/
 
 
 
@@ -879,7 +894,10 @@ footer .soc_icon {
  .donation_input {
     margin-top: 10px;
   }
-
+.number_packet {
+    left: 5%;
+    top: 16%;
+  }
 }
 @media screen and (max-width: 1199.8px) {
   .menu_list li {
@@ -913,6 +931,7 @@ footer .soc_icon {
   .packet_content {
     margin-bottom: 10px;
   }
+
 }
 @media screen and (min-width: 576px) {
   .gallery_title {
