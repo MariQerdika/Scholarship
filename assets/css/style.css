@@ -28,7 +28,7 @@ header {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1050;
 }
 .menu_list li {
 	display: inline;
@@ -591,6 +591,7 @@ iframe {
   font-size: 12px;
   color: #fff;
   display: block;
+
 }
 .gallery_title a:hover {
   color: #ff0000;
@@ -600,9 +601,11 @@ iframe {
     position: absolute;
     z-index: 1000;
     width: 90%;
+
     padding: 8px 20px;
     top: 30%;
     background-color: #33333359;
+
 }
 .img_num {
   position: absolute;
