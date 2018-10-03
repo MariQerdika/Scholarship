@@ -277,10 +277,19 @@ color: #fc3535;
 
 }
 .no_padding {
-  padding:0;
+  padding: 0;
 }
 .non_left_padding {
   padding-left: 0;
+}
+.min_padding {
+  padding: 3px;
+}
+.scholarsheep_video iframe{
+  margin: 0;
+}
+.scholarship_slider .owl-nav {
+  margin-right: -10px;
 }
 /*------------------------------------and news block style-------------------*/
 .news_inner {
@@ -831,8 +840,8 @@ figure img {
 }
 /*---------------------------start scholarship page*/
 .scholarship_back_color {
-  background-color: #ecf0f1;
-  padding: 50px;
+  background-color: #ecf0f1 !important;
+  padding: 48px !important;
 }
 .scholarship_image img {
   width: 100%;
@@ -849,9 +858,7 @@ figure img {
 .padding_left {
   padding-left: 0;
 }
-h4, .scholarship_text {
-  padding-left: 50px;
-}
+
 .form-control:focus {
   border-color: #ff808c !important;
   box-shadow: none !important;
@@ -1076,7 +1083,7 @@ footer .soc_icon {
     top: 16%;
   }
   .padding_right {
-    padding-right: 0;
+    padding-right: 15px;
     padding-left: 0;
 }
 
