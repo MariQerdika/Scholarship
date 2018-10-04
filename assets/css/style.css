@@ -743,11 +743,12 @@ iframe {
 .price {
   color: #ff0000;
 }
-.packet h5 {
-  margin-top: 40px;
+.packet h5  {
+  padding-top: 40px;
 }
 .packet h5 a {
   color: #181818;
+  
 }
 .packet h5 a:hover {
   color: #ff0000;
@@ -769,6 +770,16 @@ iframe {
     left: -65px;
     top: -70px;
     z-index: -1;
+}
+.packet_content a {
+  display: block;
+  color: #333;
+}
+.packet_content a:hover{
+  text-decoration: none;
+}
+.packet_content:hover{
+  border: 1px solid #ffc7cc;
 }
 /*end donation page style*/
 .video iframe {
@@ -957,7 +968,6 @@ footer .tw a:hover {
 footer .mail_block {
   text-align: right;
 }
-
 
 
 
