@@ -185,7 +185,10 @@ header {
   background-color: #ff3333;
   border-color: #ca2f2f;
 }
-
+.right .btn-success:active {
+  background-color: #ff3333 !important;
+  border-color: #ca2f2f !important;
+}
 .btn-success:focus {
   box-shadow: 0 0 0 0.2rem rgb(212, 68, 68, 0.5);
 }
@@ -349,13 +352,13 @@ color: #fc3535;
 
 /*------------------start slider style------------*/
 .owl-nav {
-    background-color: white;
+    background-color: transparent;
     position: absolute;
     top: -45px;
     right: 0;
 }
 .owl-nav span {
-  color: #333;
+  color: #ff0000;
   font-size: 30px;
   padding: 0 10px;
 }
@@ -445,7 +448,24 @@ iframe {
 .page-link {
   border: none; !important;
 }
-
+.popup_news {
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  margin: 80px auto 0;
+  padding: 5px;
+  width: 51%;
+  height: 60%; 
+}
+.popup_news img {
+  width: 100%;
+  border: 5px solid #fff;
+}
+.popup_news .close {
+  color: #b3b3b3;
+}
 /*end news page style*/
 /*start contributors page*/
 .contributors {
@@ -528,7 +548,7 @@ iframe {
   text-align: center;
 }
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -576,6 +596,9 @@ iframe {
   max-height: 30%;
   overflow: auto;
 }
+.transfer {
+  margin-top: 12px;
+}
 /*start gallery style*/
 .gallery_images img {
   width: 100%;
@@ -609,18 +632,19 @@ iframe {
 }
 .center {
   text-align: center;
+
 }
 .gallery_links .active {
   background-color: red;
   color: #fff;
 }
-.gallery_title a {
+.gallery_block a {
   font-size: 12px;
   color: #fff;
   display: block;
 
 }
-.gallery_title a:hover {
+.gallery_block a:hover .gallery_title a {
   color: #ff0000;
   text-decoration: none;
 }
@@ -628,11 +652,26 @@ iframe {
     position: absolute;
     z-index: 1000;
     width: 90%;
-
     padding: 8px 20px;
     top: 30%;
     background-color: #33333359;
 
+}
+.gallery_block h6 {
+  font-size: 12px;
+  color: #fff;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  width: 90%;
+  padding: 8px 20px;
+  top: 30%;
+  background-color: #3333338f;
+  line-height: 17px;
+  font-weight: 200 !important;
+}
+.gallery_block a:hover h6{
+color:red;
 }
 .img_num {
   position: absolute;
@@ -669,7 +708,7 @@ iframe {
   padding: 80px 0;
 }
 .donation button {
-  font-size: 12px;
+  font-size: 11px;
 }
 .form-check {
   padding-left: 0;
@@ -681,7 +720,8 @@ iframe {
   text-align: right;
 }
 .form-control {
- font-size: 12px;
+ font-size: 11px;
+ padding: .375rem .50rem !important;
 }
 .donation_packet h2 {
   color: #ff0000;
@@ -792,7 +832,6 @@ iframe {
 }
 figure {
   width: 100%;
-  
   margin: 0;
   padding: 0;
   background: #fff;
@@ -886,14 +925,14 @@ figure img {
   font-size: 20px!important;
 }
 .sound {
-width: 120px;
-height: 40px;
+width: 101px;
+height: 35px;
 position: fixed;
 bottom: 0;
 cursor: pointer;
 display: inline-block;
 background-color: #d0d1d0;
-padding-left:40px;
+padding-left:30px;
 padding-top: 9px;
 border-top-right-radius: 25px;
 }
@@ -914,7 +953,7 @@ border-radius: 50%;
 -webkit-transition: all 200ms;
 transition: all 200ms;
 margin: auto;
-top: 0;
+top: 4px;
 bottom: 0;
 left: 0;
 right: 20px;
@@ -929,8 +968,8 @@ height: 45%;
 }
 .sound-mute .sound--wave {
 border-radius: 0;
-width: 30%;
-height: 30%;
+width: 34%;
+height: 34%;
 border-width: 0 4px 0 0;
 }
 .sound-mute .sound--wave_one {
@@ -1018,6 +1057,9 @@ footer .soc_icon {
     font-size: 20px;
     padding-top: 20px;
 }
+.transfer {
+  margin-top: 0;
+}
 
 }
 
@@ -1096,7 +1138,9 @@ footer .soc_icon {
     padding-right: 15px;
     padding-left: 0;
 }
-
+.center {
+  margin-top: 10px;
+}
 }
 
 @media screen and (max-width: 1199.8px) {
@@ -1124,9 +1168,6 @@ footer .soc_icon {
   }
   .gallery_links a {
     font-size: 13px;
-  }
-  .donation button {
-    margin-top:20px;
   }
   .packet_content {
     margin-bottom: 10px;
