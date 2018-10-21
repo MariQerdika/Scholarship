@@ -92,34 +92,32 @@
 <div class="container">
   <div class="row full_video scholarsheep_video"> 
     <div class="col-12 col-md-6 col-lg-3 min_padding">
-      <div class="video">
+      <a href="#videoStory" class="button more" id="videoLink"><img src="assets/images/video_img.png"></a>
+      <div id="videoStory" class="mfp-hide">
         <iframe src="https://www.youtube.com/embed/L3aMtj44chU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
     <div class="col-12 col-md-6 col-lg-3 min_padding">
-      <div class="video">
+      <a href="#videoStory" class="button more" id="videoLink1"><img src="assets/images/video_img.png"></a>
+      <div id="videoStory" class="mfp-hide">
         <iframe src="https://www.youtube.com/embed/L3aMtj44chU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
     <div class="col-12 col-md-6 col-lg-3 min_padding">
-      <div class="video">
-        <img src="assets/images/3_small.jpg">
+      <a href="#videoStory" class="button more" id="videoLink2"><img src="assets/images/video_img.png"></a>
+      <div id="videoStory" class="mfp-hide">
+        <iframe src="https://www.youtube.com/embed/L3aMtj44chU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
     <div class="col-12 col-md-6 col-lg-3 min_padding">
-      <div class="video">
+      <a href="#videoStory" class="button more" id="videoLink3"><img src="assets/images/video_img.png"></a>
+      <div id="videoStory" class="mfp-hide">
         <iframe src="https://www.youtube.com/embed/L3aMtj44chU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
   </div>
 </div>
-<div id="popup_video1" class="overlay">
-  <div class="popup_news">  
-    
-    <iframe src="https://www.youtube.com/embed/L3aMtj44chU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <a class="close" href="#">&times;</a>
-  </div>
-</div>
+
 <footer>
   <div class="container footer">
     <div class="row">
@@ -149,8 +147,32 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="popup-video.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+<script src="popup-video.js"></script>
+<link rel="stylesheet"  href="assets/css/video_popup.css"> 
+
+<script>
+  $('#videoLink').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+})
+   $('#videoLink1').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+})
+    $('#videoLink2').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+})
+    
+   $('#videoLink3').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+})   
+  </script>
 </body>
 </html>
