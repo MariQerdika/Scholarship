@@ -504,8 +504,14 @@ iframe {
   height: 60%; 
 }
 .popup_news img {
-  width: 100%;
+  width: 70%;
   border: 5px solid #fff;
+  position: relative;
+}
+.popup_news .close {
+  position: absolute;
+  bottom: 50px;
+  right: 210px;
 }
 .popup_news .close {
   color: #b3b3b3;
@@ -609,7 +615,21 @@ iframe {
   visibility: visible;
   opacity: 1;
 }
-
+.overlay_news {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.80);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay_news:target {
+  visibility: visible;
+  opacity: 1;
+}
 .popup {
   margin: 100px auto;
   padding: 70px;
