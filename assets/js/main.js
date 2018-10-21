@@ -14,7 +14,7 @@
     $(".search-btn").click(function(){
         $('.search-txt').toggleClass('lang_href');
     });
-});
+});  
 // search style end
 
 
