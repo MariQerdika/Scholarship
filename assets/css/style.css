@@ -591,6 +591,9 @@ iframe {
   background-clip: padding-box;
   text-align: center;
 }
+.contributors_overlay .overlay {
+  min-height: 276% !important;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -601,7 +604,6 @@ iframe {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  min-height: 276% !important;
 }
 .overlay:target {
   visibility: visible;
@@ -876,41 +878,8 @@ color:red;
   clear: both;
   display: block;
 }
-figure {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  overflow: hidden;
-  cursor:pointer;
-}
-figure img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-/* Circle */
-.hover15 figure {
-  position: relative;
-}
-.hover15 figure::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  display: block;
-  content: '';
-  width: 0;
-  height: 0;
-  background: rgba(255,255,255,.2);
-  border-radius: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-.hover15 figure:hover::before {
-  -webkit-animation: circle .75s;
-  animation: circle .75s;
-}
+
+
 .hover15 a {
   color: #333;
 }
@@ -1090,6 +1059,11 @@ footer .soc_icon {
   .popup {
     padding: 60px 20px;
   }
+  .small_size_class {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1196,6 +1170,7 @@ footer .soc_icon {
 #main .last_news .news_hover h3{
     padding-top: 20px;
 }
+
 }
 
 @media screen and (max-width: 1199.8px) {
