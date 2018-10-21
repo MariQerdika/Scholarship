@@ -1,5 +1,5 @@
 .menu_list, h1,h2,h3,h4,h5,h6, .text_left, .btn-success, .news, .news_more, .mail_block, .contr_img, .contributors_more, .company_img, .btn-danger,
-.gallery_links, .gallery_title, .form-control, .label-text, .hover15 {
+.gallery_links, .gallery_title, .form-control, .label-text, .hover15, .btn-red {
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
@@ -39,7 +39,7 @@ header {
 .menu_list li a {
 	color:#fff;
 }
-.menu_list  .active a {
+nav .active a {
   color: #c52c2c;
   text-decoration: none;
   transition: all 0.5s ease-in;
@@ -117,15 +117,59 @@ header {
   color: #ff3333;
 }
 /*end change language style*/
+#main_banner .btn:link,
+#main_banner .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 57px;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+}
+#main_banner .btn-red {
+  background-color: #ff3333;
+  color: #fff;
+  width: 100%;
+}
+#main_banner .btn:hover {
+  background-color: #ff3333;
+  transform: translateY(-3px);
+  box-shadow:  0 1rem 2rem rgba(0,0,0,.2);
+  color: #fff;
+}
+#main_banner .btn:focus {
+  box-shadow: none;
+}
+#main_banner .btn:active {
+  transform: translateY(-1px);
+  box-shadow:  0 .5px 1rem rgba(0,0,0,.2);
+}
+#main_banner .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+#main_banner .btn-red::after {
+  background-color: #ff0000;
+}
+#main_banner .btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
 /*-------------------------------end header style-------------------------*/
 #main_banner {
-  padding: 20px 0 0;
+  padding: 70px 0 0;
   position: relative;
 }
 
 #main_banner .main_banner {
   width: 100%;
-  padding: 0;
 }
 
 #main_banner .main_banner_text {
