@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-<header>
+  <header>
   <div class="container header">
     <div class="row">
       <a class="col-2 logo" href="index.html"><img src="assets/images/logo.png"></a>
@@ -105,34 +105,34 @@
         </div>
       </div>
       <div class="row company_img">
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 small_size_class">
               <a href="#"><img class="donators" src="assets/images/company_logo1.png">მაკდონალდს საქართველო</a>
             </div>
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 small_size_class">
               <a href="#"><img class="donators" src="assets/images/company_logo2.png">KFC GEORGIA</a>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 small_size_class">
               <a href="#"><img class="donators" src="assets/images/company_logo3.png">ადიდას საქართველო</a>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 small_size_class">
               <a href="#"><img class="donators" src="assets/images/company_logo4.png">ჯეოლაბი - GEOLAB</a>
             </div> 
       </div>
       <div class="row company_img">
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 small_size_class">
               <a href="#"><img class="donators" src="assets/images/company_logo5.png">კოკა კოლა საქართველო</a>
             </div>
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 small_size_class">
               <a href="#"><img class="donators" src="assets/images/company_logo6.png">Geocell - ჯეოსელი</a>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 small_size_class">
               <a href="#"><img class="donators" src="assets/images/company_logo7.png">ქისქვილი ჯგუფი</a>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 small_size_class">
               <a href="#"><img class="donators" src="assets/images/company_logo8.png">AltaOkay</a>
             </div>
       </div>
@@ -252,6 +252,15 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
+<script>
+  // burger click start
+ $(document).ready(function(){
+        $('.fa-bars').click(function(){
+            $('.menu_list').toggleClass('active');
+        });
+    });
+// burger click end
+</script>
 </body>
 </html>

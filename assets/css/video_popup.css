@@ -11,3 +11,14 @@
     box-sizing: border-box;
     margin: 10px auto !important;
 }
+#videoStory iframe{
+    border: 5px solid #fff;
+}
+.mfp-close {
+    position: absolute !important;
+    right: 0 !important;
+    top: -15px !important;
+    color: red !important;
+    width: 13px;
+    font-weight: bold;
+}

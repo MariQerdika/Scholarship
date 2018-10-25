@@ -1,14 +1,3 @@
-// burger click start
- $(document).ready(function(){
-        $('.toggle').click(function(){
-            $('.menu_list').toggleClass('active');
-        });
-    });
-// burger click end
-
-
-
-
 // search jquery start
   $(document).ready(function(){
     $(".search-btn").click(function(){
@@ -91,14 +80,11 @@ $(document).ready(function(){
 // });
 
 
-
-
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:4,
     loop:true,
     margin:10,
-
     autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true, 
@@ -110,5 +96,8 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
+
+
+
 
 
