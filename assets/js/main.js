@@ -1,3 +1,17 @@
+
+ $(document).ready(function(){
+    $('nav .toggle').click(function(){
+      $('nav .toggle').toggleClass('nav-active')
+    });
+  });
+   // burger click start
+ $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.menu_list').toggleClass('active');
+        });
+    });
+// burger click end
+
 // search jquery start
   $(document).ready(function(){
     $(".search-btn").click(function(){
@@ -80,24 +94,59 @@ $(document).ready(function(){
 // });
 
 
+
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:4,
     loop:true,
     margin:10,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true, 
+    boolean:true,
+    // autoplay:true,
+    // autoplayTimeout:3000,
+    responsiveClass:true,
     nav: true,
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[1000])
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            
+        },
+        1200:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+
+
 })
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
+
+
+//video popup 
+$('#videoLink').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 })
-
-
-
+   $('#videoLink1').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+})
+    $('#videoLink2').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+})
+    
+   $('#videoLink3').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+}) 
 
 

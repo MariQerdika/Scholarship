@@ -17,9 +17,14 @@
   <div class="container header">
     <div class="row">
       <a class="col-2 logo" href="index.html"><img src="assets/images/logo.png"></a>
-        <div class="col-10 col-sm-9">
+        <div class="col-9 col-sm-9">
           <nav>
-            <div class="toggle"><i class="fa fa-bars"></i></div>
+            <div class="toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <ul class="menu_list">
               <li><a href="index.html">მთავრი</a></li>
               <li><a href="about.html">ჩვენ შესახებ</a></li>
@@ -31,7 +36,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-1 d-none d-sm-block">
+        <div class="col-1">
           <div class="search-box">
             <input class="search-txt" type="text" name="" placeholder="ძებნა...">
             <a class="search-btn" href="#">
@@ -68,8 +73,10 @@
     <div class="col-12 col-lg-9">
       <div class="row justify-content-between">
         <div class="col-4">
+          <div class="row">
           <div class="cub"></div>
-          <h6>სურათები</h6>
+          <h6 class="min_header">სურათები</h6>
+        </div>
         </div>
        <div class="owl-carousel" id="bottom_slider">
         <div><a href="#popup_news1"><img src="assets/images/slider_img0.png"/></a></div>
@@ -151,14 +158,5 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
-<script>
-  // burger click start
- $(document).ready(function(){
-        $('.fa-bars').click(function(){
-            $('.menu_list').toggleClass('active');
-        });
-    });
-// burger click end
-</script>
 </body>
 </html>

@@ -3,10 +3,60 @@
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
-.news_block, .about_center_content .about_bottom_content, .contributors_text, .contr_text, .popup_content, .inner_news_text, .packet_text, .scholarship_text {
+.news_block, .about_center_content .about_bottom_content, .contributors_text, .contr_text, .popup_content, .inner_news_text, .packet_text, .scholarship_text, .student_block_text {
 font-family: 'BPG2017DejaVuSans';
 }
-
+.toggle {
+  position: absolute;
+  top: 44%;
+  right: -12px;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  cursor:pointer;
+}
+.toggle span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  transition: .5s;
+  text-align: right;
+}
+.toggle span:nth-child(1) {
+  transform: translate(-50%, -50%) translateY(-11px) ;
+  transition: .2s;
+  width: 35px;
+  left: 50%;
+}
+.toggle span:nth-child(4) {
+  transform: translate(-50%, -50%) translateY(11px) ;
+  transition: .2s;
+  width: 35px;
+  left: 50%;
+}
+.toggle.nav-active span:nth-child(1) {
+  transform: translate(-50%, -50%) translateY(-35px) ;
+  opacity: 0;
+  left: 50%;
+}
+.toggle.nav-active span:nth-child(4) {
+  transform: translate(-50%, -50%) translateY(35px) ;
+  opacity: 0;
+  left: 50%;
+}
+.toggle.nav-active span:nth-child(2) {
+  transform: translate(-50%, -50%)  rotate(45deg);
+  left: 50%;
+}
+.toggle.nav-active span:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  left: 50%;
+}
 h1 {
   padding: 120px 0 70px;
   color: #fff;
@@ -21,6 +71,7 @@ h1 {
 ul {
   margin: 0;
 }
+
 header {
 	background-color: #181818;
 	height: 70px;
@@ -61,6 +112,9 @@ nav .active a {
   background-color: #ff3333;
   padding: 3px;
   border-radius: 50%;
+}
+.min_header {
+  font-size: 12px;
 }
 
 /*search box style*/
@@ -350,9 +404,9 @@ color: #fc3535;
 .scholarsheep_video iframe{
   margin: 0;
 }
-.scholarship_slider .owl-nav {
+/*.scholarship_slider .owl-nav {
   margin-right: -10px;
-}
+}*/
 /*------------------------------------and news block style-------------------*/
 .news_inner {
   margin-top: 30px;
@@ -426,7 +480,7 @@ color: #fc3535;
 .owl-nav span {
   color: #ff0000;
   font-size: 30px;
-  padding: 0 10px;
+  padding-left: 10px;
 }
 :focus {
   outline: none !important;
@@ -1065,10 +1119,35 @@ width: 100%;
     .lb-data .lb-number  {
       display: none !important;
     }
+.student_box {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  max-height: 180px;
+  text-align: center;
+  padding: 10px;
+}
+.red_line {
+  width: 30px;
+  height: 5px;
+  background-color: red;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.student_box h6 {
+  margin-top: 10px;
+}
+.student_block_text {
+  font-size: 12px;
+  padding-bottom: 10px;
+  height: 90px;
+  overflow: hidden;
+}
 /*--------------------------end sound icon style-------------------*/
 footer {
   background-color: #181818;
   padding: 23px 0;
+  height: 70px;
 }
 footer a, span {
   color: #fff
@@ -1146,6 +1225,13 @@ footer .soc_icon {
   .company_img {
     padding: 0;
   }
+  .scholarship_image {
+    padding-right: 0 !important;
+  }
+  .padding_left {
+    padding-left: 0;
+    padding-right: 0;
+}
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1162,6 +1248,7 @@ footer .soc_icon {
 .transfer {
   margin-top: 0;
 }
+
 
 }
 
@@ -1200,19 +1287,24 @@ footer .soc_icon {
     color:#fff;
     font-size: 20px;
   }
-  .search-box {
+  /*.search-box {
   display: none;
-}
+  }*/
+  .search-box {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+  }
 .lang_href {
-    line-height: 59px;
+    line-height: 60px;
     font-size: 30px;
   }
   .search-btn {
     position: absolute;
     top: -5px;
-    right: 10px;
+    right: 23px;
     float: right;
-    width: 29px;
+    width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #ff3333;
@@ -1220,6 +1312,13 @@ footer .soc_icon {
     justify-content: center;
     align-items: center;
 }
+.search-txt {
+  height: 30px;
+  margin-right: 20px;
+  font-size: 12px;
+
+}
+
 .news_block .news_text {
     height: 74px;
 }
@@ -1247,7 +1346,7 @@ footer .soc_icon {
   width: 100%;
 }
 #main .last_news .news_text {
-  height: 85px;
+  height: 100px;
 }
 #main .last_news .news_hover h3{
     padding-top: 20px;
@@ -1256,10 +1355,25 @@ footer .soc_icon {
   width: 100%;
 }
 }
+@media screen and (max-width: 767.98px) {
+  .search-box {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+}
+}
+@media screen and (max-width: 575.98px) {
+  .search-btn {
+    right: 65px;
+  }
+  .search-txt {
+    right: 44px;
+  }
+  }
 
 @media screen and (max-width: 1199.8px) {
   .menu_list li {
-    padding: 0 5px;
+    padding: 0 5px !important;
   }
   .news_block .news_text {
     height: 123px;
@@ -1305,21 +1419,19 @@ footer .soc_icon {
 #main .last_news .news_text {
     height: 154px;
 }
+.scholarship_text {
+    font-size: 12px;
+}
+.scholarship_back_color {
+  background-color: #ecf0f1 !important;
+  padding: 45px !important;
+}
 }
 @media screen and (min-width: 576px) {
   .gallery_title {
     width: 91%;
   }
- 
-}
-/*@media screen and (min-width: 768px) {
-  #main .last_news .news_text {
-    height: 85px;
-}*/
-
-
- 
-}
+ }
 @media screen and (min-width: 992px) {
  .gallery_title {
     width: 94%;
