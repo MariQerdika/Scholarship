@@ -513,6 +513,7 @@ padding: 0;
 }
 #about_page .about_center_content h6 {
   padding-bottom: 30px;
+  font-size: 12px;
 }
 #about_page .about_bottom_content {
   background-color: #fafafa;
@@ -574,7 +575,7 @@ iframe {
   right:0;
   bottom: 0;
   left: 0;
-  margin: 100px auto 0;
+  margin: 90px auto 0;
   padding: 5px;
   width: 51%;
   height: 60%; 
@@ -896,7 +897,7 @@ color:red;
     display:inline-block;
     width:19px;
     height:19px;
-    margin:-1px 4px 0 0;
+    margin:-8px 4px 0 0;
     vertical-align:middle;
     cursor:pointer;
     border-radius:  50%;
