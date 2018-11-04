@@ -1190,6 +1190,9 @@ footer .mail_block {
   #main_banner .main_banner_text .text_right h2 {
     font-size: 17px;
   }
+  footer {
+    padding: 0;
+  }
   footer .mail_block {
   text-align: center;
 }
