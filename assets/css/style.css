@@ -1126,6 +1126,7 @@ width: 100%;
   max-height: 180px;
   text-align: center;
   padding: 10px;
+  cursor: pointer;
 }
 .red_line {
   width: 30px;
@@ -1134,6 +1135,10 @@ width: 100%;
   display: inline-block;
   margin-bottom: 10px;
   border-radius: 20px;
+}
+.student_box:hover .red_line {
+width: 200px;
+transition: all 0.3s ease-in;
 }
 .student_box h6 {
   margin-top: 10px;
