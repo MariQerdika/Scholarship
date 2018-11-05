@@ -1362,6 +1362,8 @@ footer .soc_icon {
 .about_image img {
   width: 100%;
 }
+.menu_list li {
+}
 }
 @media screen and (max-width: 767.98px) {
   .search-box {
