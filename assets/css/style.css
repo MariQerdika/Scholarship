@@ -192,7 +192,7 @@ nav .active a {
   transition: all .2s;
   position: relative;
 }
-#main_banner .btn-red {
+.btn-red {
   background-color: #ff3333;
   color: #fff;
   width: 100%;
@@ -202,6 +202,15 @@ nav .active a {
   /*transform: translateY(-3px); */
   box-shadow:  0 1rem 2rem rgba(0,0,0,.2);
   color: #fff;
+}
+.scholarship_back_color .btn:hover {
+  background-color: #ff3333;
+  /*transform: translateY(-3px); */
+  box-shadow:  0 1rem 2rem rgba(0,0,0,.2);
+  color: #fff;
+}
+.scholarship_back_color .btn-red{
+  width: 50%;
 }
 #main_banner .btn:focus {
   box-shadow: none;
@@ -221,10 +230,10 @@ nav .active a {
   z-index: -1;
   transition: all .4s;
 }
-#main_banner .btn-red::after {
+ .btn-red::after {
   background-color: #ff0000;
 }
-#main_banner .btn-animated {
+.btn-animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards;
 }
@@ -1018,7 +1027,7 @@ color:red;
 /*---------------------------start scholarship page*/
 .scholarship_back_color {
   background-color: #ecf0f1 !important;
-  padding: 48px !important;
+  padding: 29px 60px !important;
 }
 .scholarship_image img {
   width: 100%;
