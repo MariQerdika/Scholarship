@@ -503,8 +503,13 @@ color: #fc3535;
 /*-------------------------------and news_inner page style-------------------*/
 /*start about page style*/
 .inner_page_header {
-background-color: red;
-padding: 0;
+  background: red;
+  padding: 0;
+}
+.page_header_background {
+background-image: linear-gradient( to right bottom, rgba(144, 47, 9, 0.81), rgba(191, 13, 13, 0.72)),
+url(../images/Photo_back.jpg);
+
 }
 #about_page {
   padding:0;
