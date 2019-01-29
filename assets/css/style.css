@@ -1,9 +1,9 @@
 .menu_list, h1,h2,h3,h4,h5,h6, .text_left, .btn-success, .news, .news_more, .mail_block, .contr_img, .contributors_more, .company_img, .btn-danger,
-.gallery_links, .gallery_title, .form-control, .label-text, .hover15, .btn-red {
+.gallery_links, .gallery_title, .form-control, .label-text, .hover15, .btn-red, .alert-success, .alert-danger {
   font-family: 'BPGDejaVuSansCaps-Book';
 }
 
-.news_block, .about_center_content .about_bottom_content, .contributors_text, .contr_text, .popup_content, .inner_news_text, .packet_text, .scholarship_text, .student_block_text {
+.news_block, .about_center_content,  .about_bottom_content, .contributors_text, .contr_text, .popup_content, .inner_news_text, .packet_text, .scholarship_text, .student_block_text {
 font-family: 'BPG2017DejaVuSans';
 }
 .toggle {
