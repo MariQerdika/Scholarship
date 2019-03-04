@@ -1163,6 +1163,18 @@ transition: all 0.3s ease-in;
   overflow: hidden;
 }
 /*--------------------------end sound icon style-------------------*/
+#about_page {
+  min-height: 94vh;
+}
+#gallery {
+  min-height: 94vh;
+}
+.galley_inner {
+  min-height: 85vh;
+}
+#news {
+  min-height: 94vh;
+}
 footer {
   background-color: #181818;
   padding: 23px 0;
