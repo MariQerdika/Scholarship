@@ -3,17 +3,13 @@
     $('nav .toggle').click(function(){
       $('nav .toggle').toggleClass('nav-active')
     });
-  });
    // burger click start
- $(document).ready(function(){
+
         $('.toggle').click(function(){
             $('.menu_list').toggleClass('active');
         });
-    });
 // burger click end
 
-// search jquery start
-  $(document).ready(function(){
     $(".search-btn").click(function(){
         $('.search-txt').toggleClass('lang_href');
     });
